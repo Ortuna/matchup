@@ -9,6 +9,10 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'foundation-rails'
 
+group :production do
+  gem 'rails_12factor'
+end
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
