@@ -8,6 +8,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'foundation-rails'
+gem 'react-rails', github: 'reactjs/react-rails'
 
 group :production do
   gem 'rails_12factor'
