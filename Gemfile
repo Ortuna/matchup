@@ -9,12 +9,14 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'foundation-rails'
 gem 'react-rails', github: 'reactjs/react-rails'
+gem "font-awesome-rails"
 
 group :production do
   gem 'rails_12factor'
 end
 
 group :development, :test do
+  gem 'pry'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'

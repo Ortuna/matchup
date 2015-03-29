@@ -4,13 +4,38 @@
   <title>Matchup</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+
   <%= javascript_include_tag "vendor/modernizr" %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
+  <header>
+    <div class="small-text-center">
+      <div class="small-6 medium-4 columns medium-text-left">
+        <h1>Math Match up</h1>
+      </div>
+    </div>
+  </header>
+  <section class="main">
+    <%= yield %>
+  </section>
 
-<%= yield %>
+  <footer>
+    <div class="">
+      <div class="small-10 columns"></div>
+
+      <div class="small-1 columns">
+        <%= link_to(
+              "Next",
+              mock_path(step: @step + 1),
+              class:"tiny radius button #{@next ? '' : 'disabled'}") %>
+      </div>
+
+    </div>
+  </footer>
 
 </body>
 </html>
