@@ -1,0 +1,10 @@
+<%= form_for [@activity, @student] do |f| %>
+  <div class="row">
+    <div class="small-4 columns">
+      <%= f.text_field :name, placeholder: "Ricky Metz" %>
+    </div>
+    <div class="small-3 columns end">
+      <%= f.submit :submit, class: "button submit radius" %>
+    </div>
+  </div>
+<% end %>
